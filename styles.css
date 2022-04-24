@@ -11,8 +11,7 @@ body{
 	justify-content: center;
 	padding-top: 100px ;
 	padding-bottom: 100px;
-	transform: scale(1.1);
-}
+	}
 
 .intro-text-container{
 	width: 450px;
@@ -103,14 +102,13 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: column;
-padding-inline: 400px;
+padding-inline: 370px;;
 padding-block: 175px;
 }
 
 .quote{
 font: 36px light italic sans-serif;
 color: #7b7ba8;
-white-space: nowrap;
 }
 
 .person{
@@ -147,7 +145,7 @@ font-size: x-large;
 	align-items: center;
 padding: 50px;
 background-color: #5271ac;
-padding-inline: 150px;
+padding-inline: 50px;
 border-radius: 10px;
 gap: 80px;
 
