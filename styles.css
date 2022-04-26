@@ -5,19 +5,24 @@ body{
 
 }
 
+
+
+
 .introduction {
 	display: flex;
 	background-color:#7b7ba8;
 	justify-content: center;
-	padding-top: 100px ;
-	padding-bottom: 100px;
+	padding-block: 75px;
+	flex-wrap: wrap;
+	gap: 40px;
+	grid-gap: 60px;
+	
 	}
 
 .intro-text-container{
 	width: 450px;
 	height: 200px;
-	padding-right: 40px;
-}
+	}
 
 .intro-heading{
 	font-size: 48px;
@@ -33,7 +38,8 @@ body{
 
 .intro-image{
 	width: 490px;
-	height: 200px;
+	height: auto;
+	flex: 0 1 30%;
 }
 
 .intro-button{
@@ -64,20 +70,26 @@ body{
 .header {
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
-	padding-inline: 200px;
+	justify-content: space-around;
+	padding-inline: 30px;
 	padding-bottom: 5px;
 	background-color: #7b7ba8;
 	font-size: x-large;
+	flex-wrap: wrap;
 }
+
+
 
 ul {
   display: flex;
   gap: 25px;
   list-style: none;
+  padding: 0px;
+  text-align: center;
+  align-items: center;
 }
 
-a {
+.header a {
 	text-decoration: none;
 	color: ghostwhite;
 	font-variant-caps: all-small-caps;
@@ -87,6 +99,7 @@ a {
 .logo {
 font-family: 'Heebo', sans-serif;	
 color: ghostwhite;
+padding-inline: 10px;
 }
 
 .information{
@@ -102,8 +115,8 @@ display: flex;
 justify-content: center;
 align-items: center;
 flex-flow: column;
-padding-inline: 370px;;
 padding-block: 175px;
+padding-inline: 30px;
 }
 
 .quote{
@@ -139,6 +152,7 @@ font-size: x-large;
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	padding-inline: 30px;
 }
 
 .contact-container{display: flex;
@@ -190,7 +204,6 @@ gap: 80px;
 .content-container{
 display: flex;
 flex-flow: column;
-
 }
 
 
@@ -215,7 +228,12 @@ width: min-content;
 
 .image-container {
 	display: flex;
+	grid-gap: 20px;
 	column-gap: 35px;
+	flex-wrap: wrap;
+	justify-content: center;
+	padding: 100px;
+
 }
 
 .image-description{
@@ -226,4 +244,11 @@ padding-top: 10px;
 .content-headline{
 	text-align: center;
 	padding: 50px;
+}
+
+@media (max-width: 1500px){
+	.header{
+		font: red;
+		
+	}
 }
